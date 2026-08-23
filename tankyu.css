@@ -800,3 +800,73 @@ a {
     padding: 72px 0;
   }
 }
+
+/* ===== Maintenance mode (test) ===== */
+.maintenance-banner {
+  width: min(1000px, calc(100% - 40px));
+  margin: 28px auto 0;
+  padding: 20px 24px;
+  border: 1px solid #d9a02c;
+  border-radius: 14px;
+  background: #fdf6e0;
+  text-align: center;
+}
+
+.maintenance-banner-title {
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.maintenance-banner-text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.9;
+}
+
+.maintenance-banner-text strong {
+  color: var(--navy);
+}
+
+.maintenance-box {
+  max-width: 560px;
+  margin: 24px auto 0;
+  padding: 24px 28px;
+  border: 1px solid #d9a02c;
+  border-radius: 14px;
+  background: #fdf6e0;
+  text-align: center;
+}
+
+.maintenance-box-title {
+  margin: 0;
+  color: var(--navy);
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.maintenance-box-text {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.maintenance-box-note {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .maintenance-banner,
+  .maintenance-box {
+    padding: 18px 20px;
+  }
+}
